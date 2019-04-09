@@ -1,5 +1,6 @@
 # Password-Cracker
 Program by Sang Mai, Zyra De Los Reyes and Paul Ries
+
 Overview:
 In this project you will be both saving and storing passwords, as well as trying to “crack” a
 password file. This project is divided up into two parts. This project will require the use of a
@@ -9,6 +10,7 @@ to have a fairly straightforward division of labor for at least part of the proj
 parts might not be equally difficult and certainly you will have to come to some agreement on
 format and encoding before starting, so do not assume you will be able to code your part without
 input from the other.
+
 Task 1:
 Write a program that allows a user to create an account and then authenticate whether or not they
 have an account. However, the trick is that this is done through three different password files. So
@@ -25,11 +27,13 @@ The three password files should be as follows:
 1) A plaintext username password pair, stored in text in a file
 2) A username and a hashed password, stored in some format in the file
 3) A username, a salt and a hashed password+salt, stored in some format in the file
+
 Task 2:
 Write a program that, when given bounds on password size (for example, all passwords between
 length 3 and 8) and a number of accounts (100 for example), will then create random usernames
 and passwords in the specified ranges and then create 100 accounts for each of the 3 password
 files. 
+
 Task3:
  In this task we will be attempting to crack one of the password files. You can assume that you
 have full knowledge of the format of the particular file you are working with. This program
@@ -54,6 +58,7 @@ describe to me which format is more secure and give some concrete numbers on how
 secure it is. I would like you to tell me what password length would be the minimum to be secure
 on the system that you ran the code on. Be ready with some conclusions, though more
 importantly the ability to talk about what you discovered or had problems with.
+
 Cryptographic library:
 For this project you will need some cryptographic library that lets you do hashes. You can pick
 an environment to do this in, but as all of us have access to the delmar, if you do not have a
@@ -67,6 +72,7 @@ To install it locally, you unzip the file in some location, then you have to con
 another directory. So suppose you wanted to install it to your subdirectory ~/usr/local/ssl, then
 you would then run in the directory that you unzipped the files:
 ./configure —openssldir=~/usr/local/ssl
+
 Then you have to compile it, so you do:
 make
 Then you have to install it:
@@ -76,9 +82,3 @@ have example code to do this on delmar, located at
 /accounts/facstaff/hauschildm/Crypto/proj2test
 which has a Makefile and some source files for a program that takes in a string from the user and
 hashes it in C.
-Submission:
-For turnin I want the source files of each of the three tasks uploaded separately (not zipped). I
-then what documentation explaining your results, including environment chosen, any source
-code, results obtained, etc. However, for this project I will want in-office presentations of your
-project where you will demonstrate quickly your code running and any problems you
-encountered. I will set up the times for this during final exams week. 
