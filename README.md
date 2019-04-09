@@ -68,10 +68,6 @@ You will then need to install it (locally) from source on delmar,
 https://wiki.openssl.org/index.php/Compilation_and_Installation
 The openssl files themselves are available through that link but also at
 /accounts/facstaff/hauschildm/Crypto 
-To install it locally, you unzip the file in some location, then you have to configure it to install in
-another directory. So suppose you wanted to install it to your subdirectory ~/usr/local/ssl, then
-you would then run in the directory that you unzipped the files:
-./configure —openssldir=~/usr/local/ssl
 
 Then you have to compile it, so you do:
 make
